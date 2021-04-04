@@ -1,0 +1,25 @@
+if ddos services are "cloud based" --> find real server's IP adress and connect to it
+(only work with DNS rerouting)
+
+```
+Running	Wireshark	or	some	other	packet	capture	program	is	an	effective	method	to	verify	the	traffic	is	
+indeed	bypassing	the	DDoS protection	service.	When	visiting	the	home	page	and	running	a	packet	
+capture,	the	outbound	GET	request	should	be	going	to	the	origin	IP	and	should	not	be	going	to	any	IP	
+that	the	domain	would	normally	resolve	to.
+
+For	example	if	you	view	a	Cloudflare	protected	website,	you	will	see	a	“CF-RAY”	response	header,	
+and	a	Cloudflare	specific	cookie.	If	you	view	the	origin	directly,	it	will	not	normally	have	these	headers.	
+```
+
+```
+__Related	Domains__
+
+Perhaps	the	simplest	technique	for	unmasking	the	origin	IP is to	check	similar	domain	names to	see	if	
+they	also	host	web	sites	that	match	the	intended	target	site.	For	example,	if	
+“http://www.integralis.com”	is	hosted	behind	a	DDoS	protection	service	the	attacker	could	try	browsing	
+to	“http://ftp.integralis.com”. This	takes	advantage	of	the	fact that	many	web	servers	also	host	other	
+services,	FTP	being	one	of	the	most	frequent,	that	may	have	their	own	domain	names	that	are	not	
+routed	through	DDoS	protection	services.	Checking	the	IP	of	any	known	subdomains could	reveal	that	
+the	ftp.integralis.com domain	name	points	to	the	actual	IP	address	of	the	server	hidden	behind	the	
+DDoS	protection	service
+```

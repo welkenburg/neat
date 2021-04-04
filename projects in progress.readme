@@ -1,0 +1,39 @@
+ ________________________________________ 
+|-----------tic tac toe minmax-----------|
+////basic game done
+////minmax algorithm to be done
+-py
+ ________________________________________ 
+|--------------convolutions--------------|
+////finish to make the import function
+////start the convolutions part
+-cpp
+ ________________________________________ 
+|---------------snake html---------------|
+////error when going back
+//// make it reset ?
+-html
+ ________________________________________ 
+|-----------------sniffer----------------|
+////TCP doesn't seem to work
+////ICMP either
+-py
+ ________________________________________ 
+|---------------julias bmp---------------|
+////Make it faster
+////multi threads ?
+////memory managment - overflow when working with too large images
+-cpp
+ ________________________________________ 
+|-----------mendelbrot set bmp-----------|
+////orbit detection to be done
+-cpp
+ ________________________________________ 
+|----------mendelbrot explorer-----------|
+////not began yet
+////how do you handle keyboard events ?
+-java
+ ________________________________________ 
+|-----------pi approximations------------|
+////make it display more digits
+-cpp

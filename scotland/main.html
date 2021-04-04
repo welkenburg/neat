@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SCOTLAND FOREVER</title>
+</head>
+<body style="margin:0px;overflow: hidden;">
+	<div id="block"></div>
+	<video id="scott" src="vid.mp4" poster="hermes.png" loop controls onclick="hid()" height="100%" width="100%"> </video>
+	<script>
+   		function hid(){
+   			document.getElementById("block").style.visibility = "visible";
+   		}
+	</script>
+	<style>
+		#block{
+			visibility: hidden;
+			width:100%;
+			height:100%;
+			z-index:10;
+			position: absolute;
+		}
+
+	</style>
+</body>
+</html>

@@ -1,0 +1,4 @@
+min max algorithm
+chaque plateau a 6 symboles differents dans un ordre aleatoir
+9 plateaux
+ 

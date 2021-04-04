@@ -1,0 +1,25 @@
+89 50 4E 47 0D 0A 1A 0A //png header
+
+//IDHR chunk
+00 00 00 0D //size of the data --> 13
+49 48 44 52 //noun of chunk --> IDHR 
+00 00 00 01 //width --> 1
+00 00 00 01 //height --> 1
+08 			//bits depth --> 8
+02 			//color type --> 2 == rgb
+00 			//compression methode --> 0 = None? usualy DEFLATE
+00 			//filtering --> 0 = None
+00 			//interaling --> 0 = None? animated images?
+90 77 53 DE //CRC
+
+//IDAT chunk
+00 00 00 0C //size of the data --> 12
+49 44 41 54 //noun of chunk --> IDAT
+08 //bits depth ??????
+D7 63 F8 CF C0 00 00 03 01 01 00 //????????????????????
+18 DD 8D B0 //CRC 
+
+//IEND chunk
+00 00 00 00 //size of the data --> 0
+49 45 4E 44	//noun of chunk --> IEND
+AE 42 60 82 //CRC
